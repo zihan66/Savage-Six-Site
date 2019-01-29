@@ -5,7 +5,11 @@ Online database to store contact information of former cadets of Squadron 6 and 
 Should store:
 
 -Name
+
 -Class Year
+
 -Email address
+
 -Phone number
+
 -Address
