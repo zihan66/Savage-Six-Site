@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Savage-Six-Site: production" uuid="26fee873-a30c-46a2-8d84-f125b09872ca">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>Savage-Six-Site</user-name>
+    </data-source>
+    <data-source name="Rails Savage-Six-Site: test" uuid="657f65d1-5292-4426-b31c-bb97462d0e0d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails Savage-Six-Site: development" uuid="d66dfdc2-730e-4739-9260-a3783d3f5f6d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+    </data-source>
+  </component>
+</project>
