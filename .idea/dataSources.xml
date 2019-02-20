@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Rails Savage-Six-Site: production" uuid="26fee873-a30c-46a2-8d84-f125b09872ca">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="development" uuid="232cde2e-9fa5-4d36-b66d-c2deab64eafd">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/Savage-Six-Site_production</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\zihan\RubymineProjects\untitled1\db\development.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="Rails Savage-Six-Site: test" uuid="657f65d1-5292-4426-b31c-bb97462d0e0d">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="Rails untitled1: development" uuid="3a14815e-fa67-4c9f-9c38-5fc9b935b118">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/Savage-Six-Site_test</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\zihan\RubymineProjects\Savage-Six-Site\db\development.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="Rails Savage-Six-Site: development" uuid="d66dfdc2-730e-4739-9260-a3783d3f5f6d">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="Rails untitled1: test" uuid="32aba4fa-4d11-46de-93fb-8f9c21906a3c">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/Savage-Six-Site_development</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\zihan\RubymineProjects\Savage-Six-Site\db\test.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
     </data-source>
   </component>
 </project>
