@@ -1,29 +1,45 @@
 
 %h1 Register New Cadet
 
-= form_tag new_user_path do
+= form_for new_user_path do
 
-  = label :user, :email, 'Email: '
+  = label :user, :email, 'Email: ', :presence => true
   = email_field :user, :email
 
   = label :user, :password, 'Password: '
   = text_field :user, :password
 
-  %br
+  = label :user, :passwordConfirm, 'Confirm Password: '
+  = text_field :user, :passwordConfirm
+
   %br
   %br
 
-  = label :user, :name, 'Name: '
-  = text_field :user, :name
+    %hr{:style => 'border: 2px solid black;'}
 
-  = label :user, :year, 'Class Year: '
-  = date_select :user, :year, :start_year =>1876, :discard_day => true, :discard_month => true
+  %br
+  %br
+
+  = label :user, :firstName, 'First Name: '
+  = text_field :user, :firstName
+
+  %br
+  %br
+
+  = label :user, :lastName, 'Last Name: '
+  = text_field :user, :lastName
 
   %br
   %br
 
   = label :user, :major, 'Major'
   = text_field :user, :major
+
+  = label :user, :year, 'Class Year: '
+  = date_select :user, :year, :start_year =>1876, :discard_day => true, :discard_month => true
+
+  %br
+  %br
 
   = label :user, :occupation, 'Current Occupation'
   = text_field :user, :occupation
@@ -37,26 +53,17 @@
   %br
   %br
 
-  = label :user, :address1, 'Address Line 1: '
-  = text_field :user, :address1
-
-  %br
-  %br
-
-  = label :user, :address2, 'Address Line 2: '
-  = text_field :user, :address2
-
-  %br
-  %br
-
   = label :user, :city, 'City: '
   = text_field :user, :city
+
+  %br
+  %br
 
   = label :user, :state, 'State/Region: '
   = text_field :user, :State
 
-  = label :user, :zipCode, 'Zip Code: '
-  = text_field :user, :zipCode
+  %br
+  %br
 
   = label :user, :country, 'Country: '
   = text_field :user, :country
@@ -64,4 +71,4 @@
   %br
   %br
 
-= submit_tag 'Save Changes'
+= submit_tag 'Register'
