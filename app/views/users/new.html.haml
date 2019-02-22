@@ -1,10 +1,13 @@
 
-%h1 Create New Movie
+%h1 Register New Cadet
 
 = form_tag users_new_path do
 
-  = label :user, :name, 'Name'
-  = text_field :user, 'title'
+  = label :user, :name, 'First Name'
+  = text_field :user, 'First'
+  
+  = label :user, :name, 'Last Name'
+  = text_field :user, 'Last'
 
   = label :user, :year, 'Class Year'
   = date_select :user, :year, :start_year =>1876, :discard_day => true, :discard_month => true
