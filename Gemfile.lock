@@ -77,6 +77,10 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
+    countries (3.0.0)
+      i18n_data (~> 0.8.0)
+      sixarm_ruby_unaccent (~> 1.1)
+      unicode_utils (~> 1.4)
     crass (1.0.4)
     cucumber (3.1.2)
       builder (>= 2.1.2)
@@ -125,6 +129,7 @@ GEM
       ruby_parser (~> 3.5)
     i18n (1.5.3)
       concurrent-ruby (~> 1.0)
+    i18n_data (0.8.0)
     io-like (0.3.0)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
@@ -219,6 +224,7 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
     sexp_processor (4.11.0)
+    sixarm_ruby_unaccent (1.2.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -240,6 +246,7 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
+    unicode_utils (1.4.0)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -261,6 +268,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper (= 1.2.0)
   coffee-rails (~> 4.2)
+  countries
   cucumber-rails
   duktape
   haml-rails (>= 0.3.4)
@@ -280,4 +288,4 @@ RUBY VERSION
    ruby 2.4.5p335
 
 BUNDLED WITH
-   1.16.1
+   2.0.1
