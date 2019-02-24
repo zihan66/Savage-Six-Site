@@ -33,20 +33,18 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+gem 'web-console', '>= 3.3.0'
 
+gem 'capybara', '>= 2.15'
+gem 'selenium-webdriver'
+# Easy installation and use of chromedriver to run system tests with Chrome
+gem 'chromedriver-helper', '1.2.0'
+gem 'cucumber-rails', require: false
+gem 'rspec-rails'
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
-  gem 'web-console', '>= 3.3.0'
-
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper', '1.2.0'
-  gem 'cucumber-rails', require: false
-  gem 'rspec-rails'
-
 end
 
 group :production do
