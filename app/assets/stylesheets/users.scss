@@ -5,3 +5,13 @@
 textarea {
   width: 500px;
 }
+
+#NewUserForm td, #NewUserForm tr {
+  padding: 5px;
+  text-align: right;
+}
+
+label.required:after {
+  content: " *";
+  color: red;
+}
