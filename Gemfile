@@ -47,6 +47,7 @@ group :development, :test do
   gem 'rails_12factor'
   gem 'heroku-deflater'
 end
+gem 'haml-rails', '>= 0.3.4'
 group :developement do
   gem 'web-console', '~> 2.0'
 end
@@ -58,4 +59,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #add haml
-gem 'haml-rails', '>= 0.3.4', :group => :development
+
