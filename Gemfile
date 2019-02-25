@@ -44,7 +44,7 @@ gem 'chromedriver-helper', '1.2.0'
 gem 'cucumber-rails', require: false
 gem 'rspec-rails'
 group :development, :test do
-
+  gem 'sqlite3'
 end
 
 group :production do
