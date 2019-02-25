@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aadc10d6-619e-4d35-8f3a-57acbaffc6a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +153,9 @@
       <pane id="RailsProjectView" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -182,16 +185,15 @@
       <workItem from="1550770056513" duration="2029000" />
       <workItem from="1550782072785" duration="1950000" />
       <workItem from="1550863284210" duration="2851000" />
-      <workItem from="1550877603349" duration="14579000" />
+      <workItem from="1550877603349" duration="15930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7939000" />
+    <option name="totallyTimeSpent" value="9290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11875945" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
