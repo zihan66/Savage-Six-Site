@@ -11,6 +11,11 @@ end
 def new
 end
 def create
-  @user = User.create!(user_params)
+  if @user = User.create!(user_params)
+    redirect_to index
+  else
+    render new
+  end
+
 end
 end
