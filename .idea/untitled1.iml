@@ -70,6 +70,7 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v5.0.4, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml-rails (v1.0.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="heroku-deflater (v0.6.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="html2haml (v2.2.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.5.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.0, ruby-2.4.5-p335) [gem]" level="application" />
@@ -97,6 +98,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rails (v5.2.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.4, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_12factor (v0.0.3, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.5, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.5, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v5.2.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.3, ruby-2.4.5-p335) [gem]" level="application" />
