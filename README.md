@@ -6,7 +6,7 @@ Team Int Elligence
 
 Akin Adegboye (Scrum master)
 
-Zihan Wei (
+Zihan Wei (Product Owner)
 
 John Hamilton
 
