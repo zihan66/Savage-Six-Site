@@ -5,9 +5,7 @@ ruby '2.4.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
-# Use sqlite3 as the database for Active Record
 gem 'bcrypt', '3.1.12'
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -35,27 +33,27 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
+gem 'capybara', '>= 2.15'
+gem 'selenium-webdriver'
+# Easy installation and use of chromedriver to run system tests with Chrome
+gem 'chromedriver-helper', '1.2.0'
+gem 'cucumber-rails', require: false
+gem 'rspec-rails'
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3'
+  gem 'web-console', '~> 2.0'
+  gem 'rails_12factor'
+  gem 'heroku-deflater'
 end
 
-group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+group :production do
+  gem 'pg'
 end
-
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper', '1.2.0'
-  gem 'cucumber-rails', require: false
-  gem 'rspec-rails'
-
-end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#add haml
+gem 'haml-rails', '>= 0.3.4', :group => :development
