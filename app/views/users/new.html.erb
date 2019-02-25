@@ -1,46 +1,85 @@
-
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for User.new do |f| %>
-      <%= f.label :FirstName %>
-      <%= f.text_field :FirstName %>
 
-      <%= f.label :lastname %>
-      <%= f.text_field :lastname %>
+      <table id="NewUserForm">
+        <tr>
+          <td>
+            <%= f.label :email, "Email: " , class: 'required' %>
+            <%= f.email_field :email %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :password, "Password: ", class: 'required'  %>
+            <%= f.password_field :password %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :password_confirmation, "Confirm Password: ", class: 'required'  %>
+            <%= f.password_field :password_confirmation %>
+          </td>
+        </tr>
+      </table>
 
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
-
-      <%= f.label :major %>
-      <%= f.text_field :major %>
-
-      <%= f.label :classyear %>
-      <%= f.date_select :classyear, {start_year: 1876, end_year: 2024, :discard_day => true, :discard_month => true}%>
-
-      <%= f.label :occupation %>
-      <%= f.text_field :occupation %>
-
-      <%= f.label :phonenumber %>
-      <%= f.text_field :phonenumber %>
-
-      <%= f.label :city %>
-      <%= f.text_field :city %>
-
-      <%= f.label :state %>
-      <%= f.text_field :state %>
-
-      <%= f.label :country %>
-      <%= f.text_field :country %>
-
+      <hr style="border: 2px solid black;"/>
+      <table id="NewUserForm">
+        <tr>
+          <td>
+            <%= f.label :FirstName, "First Name: ", class: 'required' %>
+            <%= f.text_field :FirstName %>
+          </td>
+          <td>
+            <%= f.label :lastname, "Last Name: ", class: 'required'  %>
+            <%= f.text_field :lastname %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :major, "Major:", class: 'required'  %>
+            <%= f.text_field :major %>
+          </td>
+          <td>
+            <%= f.label :classyear, "Class Year: " , class: 'required' %>
+            <%= f.date_select :classyear, {start_year: 1876, end_year: Date.today.year + 5, :discard_day => true, :discard_month => true} %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :occupation, "Current Occpuation: " %>
+            <%= f.text_field :occupation %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :phonenumber, "Phone Number: "%>
+            <%= f.text_field :phonenumber %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :city, "City: " %>
+            <%= f.text_field :city %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :state, "State/Region: " %>
+            <%= f.text_field :state %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :country, "Counrty: " %>
+            <%= f.text_field :country %>
+          </td>
+        </tr>
+      </table>
+      <br>
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
   </div>
