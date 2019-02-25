@@ -44,9 +44,11 @@ gem 'cucumber-rails', require: false
 gem 'rspec-rails'
 group :development, :test do
   gem 'sqlite3'
-  gem 'web-console', '~> 2.0'
   gem 'rails_12factor'
   gem 'heroku-deflater'
+end
+group :developement do
+  gem 'web-console', '~> 2.0'
 end
 
 group :production do
