@@ -36,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v5.2.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.6.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="airbrussh (v1.3.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="archive-zip (v0.11.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="backports (v3.12.0, ruby-2.4.5-p335) [gem]" level="application" />
@@ -45,6 +46,9 @@
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.0.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano (v3.11.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano-bundler (v1.5.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano-rails (v1.4.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.13.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.9.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chromedriver-helper (v1.2.0, ruby-2.4.5-p335) [gem]" level="application" />
@@ -82,12 +86,15 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.2.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2018.0812, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.3, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.9.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.11.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.2.6, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.2.1, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-ssh (v5.1.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.1.4, ruby-2.4.5-p335) [gem]" level="application" />
@@ -105,6 +112,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.0, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="redis (v4.1.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.3.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.8.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.8.2, ruby-2.4.5-p335) [gem]" level="application" />
@@ -121,6 +129,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.13, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.18.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="temple (v0.8.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.20.3, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, ruby-2.4.5-p335) [gem]" level="application" />

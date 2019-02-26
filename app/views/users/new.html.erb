@@ -9,19 +9,19 @@
         <tr>
           <td>
             <%= f.label :email, "Email: " , class: 'required' %>
-            <%= f.email_field :email %>
+            <%= f.email_field :email, id: 'email' %>
           </td>
         </tr>
         <tr>
           <td>
             <%= f.label :password, "Password: ", class: 'required'  %>
-            <%= f.password_field :password %>
+            <%= f.password_field :password, id: 'password'%>
           </td>
         </tr>
         <tr>
           <td>
             <%= f.label :password_confirmation, "Confirm Password: ", class: 'required'  %>
-            <%= f.password_field :password_confirmation %>
+            <%= f.password_field :password_confirmation, id: 'password_confirmation' %>
           </td>
         </tr>
       </table>
@@ -31,21 +31,21 @@
         <tr>
           <td>
             <%= f.label :FirstName, "First Name: ", class: 'required' %>
-            <%= f.text_field :FirstName %>
+            <%= f.text_field :FirstName, id: 'FirstName' %>
           </td>
           <td>
             <%= f.label :lastname, "Last Name: ", class: 'required'  %>
-            <%= f.text_field :lastname %>
+            <%= f.text_field :lastname, id: 'lastname' %>
           </td>
         </tr>
         <tr>
           <td>
             <%= f.label :major, "Major:", class: 'required'  %>
-            <%= f.text_field :major %>
+            <%= f.text_field :major, id: 'major' %>
           </td>
           <td>
             <%= f.label :classyear, "Class Year: " , class: 'required' %>
-            <%= f.date_select :classyear, {start_year: 1876, end_year: Date.today.year + 5, :discard_day => true, :discard_month => true} %>
+            <%= f.date_select :classyear, {start_year: 1876, end_year: Date.today.year + 5, :discard_day => true, :discard_month => true}, id: 'myclassyear' %>
           </td>
         </tr>
         <tr>
