@@ -4,15 +4,15 @@ Team Int Elligence
 
 ## Members: 
 
-Akin Adegboye (Scrum master)
+Akin Adegboye (Scrum master / Front End Developert)
 
-Zihan Wei (Product Owner)
+Zihan Wei - (Product Owner / Back-End Developer)
 
-John Hamilton
+John Hamilton - (Front-End Developer)
 
-Robert Paraliticci
+Robert Paraliticci - (Front-End Developer)
 
-Vince Hamill
+Vince Hamill - (Back-End Developer)
 
 ## Summary
 
@@ -29,3 +29,9 @@ Should store:
 -Phone number
 
 -Address
+
+## Tools Information
+
+Ruby Version - 2.4.5p335
+Rails Version - 5.2.2
+
