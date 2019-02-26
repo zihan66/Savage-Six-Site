@@ -1,0 +1,96 @@
+{
+  "RSpec": {
+    "coverage": {
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/application_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/users_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/users_helper.rb": [
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/user.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1551150996
+  }
+}
