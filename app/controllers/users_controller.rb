@@ -10,14 +10,19 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    debugger
   end
 
   def new
   end
 
   def create
-    @user = User.create!(user_params)
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Welcome to Savage Six Site!"
+      redirect_to @user
+    else
+      render 'new'
+    end
   end
 
 end
