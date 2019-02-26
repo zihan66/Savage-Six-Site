@@ -4,7 +4,7 @@ Team Int Elligence
 
 ## Members: 
 
-Akin Adegboye (Scrum master / Front End Developert)
+Akin Adegboye (Scrum Master / Front-End Developer)
 
 Zihan Wei - (Product Owner / Back-End Developer)
 
