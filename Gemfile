@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.4.5'
 
@@ -39,24 +39,24 @@ gem 'capybara', '>= 2.15'
 gem 'selenium-webdriver'
 # Easy installation and use of chromedriver to run system tests with Chrome
 gem 'chromedriver-helper', '1.2.0'
-gem 'cucumber-rails'
 gem 'rspec-rails'
 group :development, :test do
-  gem 'sqlite3'
-  gem 'rails_12factor'
-  gem 'heroku-deflater'
+   gem 'sqlite3'
+   gem 'rails_12factor'
+   gem 'heroku-deflater'
 end
 gem 'haml-rails', '>= 0.3.4'
 group :developement do
-  gem 'web-console', '~> 2.0'
+   gem 'web-console', '~> 2.0'
 end
 
 group :production do
-  gem 'pg'
+   gem 'pg'
 end
 
 group :test do
-  gem 'simplecov', require: false
+   gem 'simplecov', require: false
+   gem 'cucumber-rails', require: false
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
