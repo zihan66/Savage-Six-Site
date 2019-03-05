@@ -18,8 +18,6 @@
         0,
         null,
         0,
-        0,
-        0,
         0
       ],
       "C:/Users/jcham/Documents/Git/Savage-Six-Site/app/controllers/sessions_controller.rb": [
@@ -32,12 +30,17 @@
         0,
         null,
         0,
-        null,
-        0,
-        0,
         0,
         0,
         null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
         0,
         0,
         0
@@ -69,6 +72,7 @@
         0,
         0,
         0,
+        0,
         null,
         0
       ],
@@ -77,6 +81,25 @@
         0
       ],
       "C:/Users/jcham/Documents/Git/Savage-Six-Site/app/helpers/sessions_helper.rb": [
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -115,7 +138,7 @@
         0
       ]
     },
-    "timestamp": 1551727523
+    "timestamp": 1551807830
   },
   "Integration Tests": {
     "coverage": {
