@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.4.5'
 
@@ -46,17 +46,17 @@ gem 'chromedriver-helper', '1.2.0'
 gem 'rspec-rails'
 gem 'sprockets-rails'
 group :development, :test do
-  gem 'sqlite3'
-  gem 'rails_12factor'
-  gem 'heroku-deflater'
+   gem 'sqlite3'
+   gem 'rails_12factor'
+   gem 'heroku-deflater'
 end
 gem 'haml-rails', '>= 0.3.4'
 group :developement do
-  gem 'web-console', '~> 2.0'
+   gem 'web-console', '~> 2.0'
 end
 
 group :production do
-  gem 'pg'
+   gem 'pg'
 end
 
 group :test do
