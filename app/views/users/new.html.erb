@@ -4,8 +4,7 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for @user do |f| %>
-
-      <table id="NewUserForm">
+      <table cellpadding="10">
         <tr>
           <td>
             <%= f.label :email, "Email: " , class: 'required' %>
@@ -24,10 +23,6 @@
             <%= f.password_field :password_confirmation, id: 'password_confirmation' %>
           </td>
         </tr>
-      </table>
-
-      <hr style="border: 2px solid black;"/>
-      <table id="NewUserForm">
         <tr>
           <td>
             <%= f.label :FirstName, "First Name: ", class: 'required' %>
@@ -53,8 +48,6 @@
             <%= f.label :occupation, "Current Occpuation: " %>
             <%= f.text_field :occupation %>
           </td>
-        </tr>
-        <tr>
           <td>
             <%= f.label :phonenumber, "Phone Number: "%>
             <%= f.text_field :phonenumber %>
@@ -65,8 +58,6 @@
             <%= f.label :city, "City: " %>
             <%= f.text_field :city %>
           </td>
-        </tr>
-        <tr>
           <td>
             <%= f.label :state, "State/Region: " %>
             <%= f.text_field :state %>
@@ -79,8 +70,10 @@
           </td>
         </tr>
       </table>
-      <br>
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <div class="submit_button">
+        <%= f.submit "Create my account", class: "btn btn-primary" %>
+      </div>
+
     <% end %>
   </div>
 </div>

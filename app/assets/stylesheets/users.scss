@@ -2,15 +2,32 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-textarea {
-  width: 500px;
+h1{
+  text-align: center;
+}
+input[type], select, textarea{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-#NewUserForm td, #NewUserForm tr {
-  padding: 5px;
-  text-align: right;
+input[type=submit] {
+  width: 15em;  height: 3em;
 }
 
+.submit_button{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom:40px;
+}
+
+td{
+  padding: 10px;
+}
 label.required:after {
   content: " *";
   color: red;
