@@ -1,10 +1,4 @@
 class UsersController < ApplicationController
-  def user_params
-    params.require(:user).permit(:FirstName, :lastname, :email, :password,
-                                 :password_confirmation, :major, :classyear, :occupation, :phonenumber, :city,
-                                  :state, :country)
-  end
-
   def index
   end
 
@@ -13,6 +7,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def create
@@ -26,4 +21,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      flash[:success] = "Profile updated"
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
+  private
+  def user_params
+    params.permit(:FirstName, :lastname, :email, :password,
+                  :password_confirmation, :major, :classyear, :occupation, :phonenumber, :city,
+                  :state, :country)
+  end
 end

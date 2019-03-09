@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_26_005521) do
+ActiveRecord::Schema.define(version: 2019_03_07_222608) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2019_02_26_005521) do
     t.string "FirstName"
     t.string "lastname"
     t.string "major"
-    t.string "classyear"
+    t.datetime "classyear"
     t.string "occupation"
     t.string "phonenumber"
     t.string "city"
