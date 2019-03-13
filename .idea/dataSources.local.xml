@@ -15,7 +15,6 @@
     </data-source>
     <data-source name="Rails untitled1: production" uuid="0f673cd0-c712-407e-9e11-e92e1e58a2b9">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
-      <auth-required>false</auth-required>
     </data-source>
   </component>
 </project>
