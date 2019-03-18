@@ -1,6 +1,85 @@
 {
   "RSpec": {
     "coverage": {
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/application_helper.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/sessions_helper.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        2,
+        0,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/users_helper.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
       "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -13,30 +92,16 @@
         0,
         0
       ],
-      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/application_controller.rb": [
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0
-      ],
       "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/users_controller.rb": [
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
         null,
         0,
         0,
         0,
         null,
+        0,
         0,
         0,
         null,
@@ -49,14 +114,33 @@
         0,
         0,
         0,
-        null,
-        0
-      ],
-      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/application_helper.rb": [
         0,
-        0
-      ],
-      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/users_helper.rb": [
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -91,7 +175,7 @@
         0
       ]
     },
-    "timestamp": 1551809037
+    "timestamp": 1552941721
   },
   "Unit Tests": {
     "coverage": {

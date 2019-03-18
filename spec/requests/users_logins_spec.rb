@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'rails_helper'
 
 RSpec.describe "UsersLogins", type: :request do
   describe "GET /users_logins" do
