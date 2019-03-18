@@ -23,13 +23,13 @@
         null,
         null,
         1,
-        2,
+        0,
         0,
         null,
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
@@ -77,6 +77,26 @@
         1,
         1,
         null,
+        1,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/application_record.rb": [
+        1,
         1,
         null
       ],
@@ -153,29 +173,9 @@
         0,
         0,
         0
-      ],
-      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/user.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1552941721
+    "timestamp": 1552952971
   },
   "Unit Tests": {
     "coverage": {
