@@ -15,17 +15,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" <%= link_to 'Savage Six Site', root_path %>  >
     <%= image_tag("logo.jpg", eight: '40', width: '40', class:"d-inline-block align-top", id: "navbar-logo") %>
-    <%= link_to 'Savage Six Site', root_path %>
   </a>
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" <%= link_to 'LogIn', login_path %>  </a>
+        <% if logged_in? %>
+          <a class="nav-link" <%= link_to "Log out", logout_path, method: :delete %> </a>
+        <% else %>
+          <a class="nav-link" <%= link_to 'LogIn', login_path %>  </a>
+        <% end %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" <%=link_to 'Create an account', new_user_path%> </a>
+        <% if logged_in? %>
+          <a class="nav-link" <%= link_to "Profile", current_user %> </a>
+        <% else %>
+          <a class="nav-link" <%= link_to 'Create an account', new_user_path %> </a>
+        <% end %>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>
