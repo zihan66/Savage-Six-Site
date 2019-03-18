@@ -1,5 +1,4 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<h1>Update your profile</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -9,18 +8,6 @@
           <td>
             <%= f.label :email, "Email: " , class: 'required' %>
             <%= f.email_field :email, id: 'email' %>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <%= f.label :password, "Password: ", class: 'required'  %>
-            <%= f.password_field :password, id: 'password'%>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <%= f.label :password_confirmation, "Confirm Password: ", class: 'required'  %>
-            <%= f.password_field :password_confirmation, id: 'password_confirmation' %>
           </td>
         </tr>
         <tr>
@@ -71,7 +58,7 @@
         </tr>
       </table>
       <div class="submit_button">
-        <%= f.submit "Create my account", class: "btn btn-primary" %>
+        <%= f.submit "Save Changes", class: "btn btn-primary" %>
       </div>
 
     <% end %>
