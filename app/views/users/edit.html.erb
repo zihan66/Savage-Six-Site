@@ -1,32 +1,15 @@
 <h1>Update your profile</h1>
+
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for @user do |f| %>
-
-
       <table cellpadding="10">
         <tr>
           <td>
             <%= f.label :email, "Email: " , class: 'required' %>
-            <%= f.email_field :email, id: 'email'%>
+            <%= f.email_field :email, id: 'email' %>
           </td>
         </tr>
-        <tr>
-          <td>
-            <%= f.label :password, "Password: ", class: 'required'  %>
-            <%= f.password_field :password, id: 'password'%>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <%= f.label :password_confirmation, "Confirm Password: ", class: 'required'  %>
-            <%= f.password_field :password_confirmation, id: 'password_confirmation' %>
-          </td>
-        </tr>
-      </table>
-
-      <hr style="border: 2px solid black;"/>
-      <table id="NewUserForm">
         <tr>
           <td>
             <%= f.label :FirstName, "First Name: ", class: 'required' %>
@@ -52,8 +35,6 @@
             <%= f.label :occupation, "Current Occpuation: " %>
             <%= f.text_field :occupation %>
           </td>
-        </tr>
-        <tr>
           <td>
             <%= f.label :phonenumber, "Phone Number: "%>
             <%= f.text_field :phonenumber %>
@@ -64,8 +45,6 @@
             <%= f.label :city, "City: " %>
             <%= f.text_field :city %>
           </td>
-        </tr>
-        <tr>
           <td>
             <%= f.label :state, "State/Region: " %>
             <%= f.text_field :state %>
@@ -73,14 +52,15 @@
         </tr>
         <tr>
           <td>
-            <%= f.label :country, "Country: " %>
+            <%= f.label :country, "Counrty: " %>
             <%= f.text_field :country %>
-          <td>
+          </td>
         </tr>
       </table>
-      <br>
-      <%= f.submit "Save changes", class: "btn btn-primary" %>
-    <% end %>
+      <div class="submit_button">
+        <%= f.submit "Save Changes", class: "btn btn-primary" %>
+      </div>
 
+    <% end %>
   </div>
 </div>
