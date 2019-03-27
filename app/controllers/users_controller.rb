@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def show
     if !logged_in?
       redirect_to login_path
+      flash[:alert] = "You must be logged in to view profiles.  "
     else
       @user = User.find(params[:id])
     end
@@ -18,9 +19,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Welcome to Savage Six Site!"
+      flash[:notice] = "Welcome to Savage Six Site!"
       redirect_to @user
     else
+      flash[:alert] = @user.errors.full_messages.join("<br/>").html_safe
       render 'new'
     end
   end
