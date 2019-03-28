@@ -10,4 +10,17 @@ class User < ApplicationRecord
   validates :password, presence: true, length: {minimum: 6}
   validates :password_confirmation, presence: true, length: {minimum: 6}
   has_secure_password
+
+  def self.search(search)
+    if search
+      term = User.find_by(lastname: search)
+      if term
+        self.where(lastname: term)
+      else
+        User.all
+      end
+    else
+      User.all
+    end
+  end
 end

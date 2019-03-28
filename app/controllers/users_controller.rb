@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.search(params[:search])
   end
 
   def show
@@ -50,6 +50,6 @@ class UsersController < ApplicationController
   def user_params
      params.require(:user).permit(:FirstName, :lastname, :email, :password,
                                      :password_confirmation, :major, :classyear, :occupation, :phonenumber, :city,
-                                      :state, :country)
+                                      :state, :country, :search)
   end
 end
