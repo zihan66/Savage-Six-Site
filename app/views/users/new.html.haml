@@ -1,0 +1,56 @@
+- provide(:title, 'Sign up')
+%h1 Sign up
+.row
+  .col-md-6.col-md-offset-3
+    = form_for @user do |f|
+      %table{:cellpadding => "11"}
+        %tr
+          %td
+            = f.label :email, "Email: " , class: 'required'
+            = f.email_field :email, id: 'email'
+        %tr
+          %td
+            = f.label :password, "Password: ", class: 'required'
+            = f.password_field :password, id: 'password'
+        %tr
+          %td
+            = f.label :password_confirmation, "Confirm Password: ", class: 'required'
+            = f.password_field :password_confirmation, id: 'password_confirmation'
+        %tr
+          %td
+            = f.label :FirstName, "First Name: ", class: 'required'
+            = f.text_field :FirstName, id: 'FirstName'
+          %td
+            = f.label :lastname, "Last Name: ", class: 'required'
+            = f.text_field :lastname, id: 'lastname'
+        %tr
+          %td
+            = f.label :major, "Major:", class: 'required'
+            = f.text_field :major, id: 'major'
+          %td
+            = f.label :classyear, "Class Year: " , class: 'required'
+            = f.date_select :classyear, {start_year: 1876, end_year: Date.today.year + 5, :discard_day => true, :discard_month => true}, id: 'myclassyear'
+        %tr
+          %td
+            = f.label :occupation, "Current Occpuation: "
+            = f.text_field :occupation
+          %td
+            = f.label :phonenumber, "Phone Number: "
+            = f.text_field :phonenumber
+        %tr
+          %td
+            = f.label :city, "City: "
+            = f.text_field :city
+          %td
+            = f.label :state, "State/Region: "
+            = f.text_field :state
+        %tr
+          %td
+            = f.label :country, "Counrty: "
+            = f.text_field :country
+        %tr
+          %td
+            = f.label :military, "Military?: "
+            = f.check_box :military
+      .submit_button
+        = f.submit "Create my account", class: "btn btn-primary"

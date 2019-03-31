@@ -14,6 +14,10 @@ module SessionsHelper
       !current_user.nil?
    end
 
+   def is_user(id)
+      return @current_user.id.to_s == id.to_s
+   end
+
    def log_out
       session.delete(:user_id)
       @current_user = nil

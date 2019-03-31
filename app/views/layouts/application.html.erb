@@ -21,11 +21,14 @@
   </a>
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav">
+      <li class="navbar-nav">
+        <a class="nav-link" <%= link_to "Home", root_path %> </a>
+      </li>
       <li class="nav-item">
         <% if logged_in? %>
           <a class="nav-link" <%= link_to "Log out", logout_path, method: :delete %> </a>
         <% else %>
-          <a class="nav-link" <%= link_to 'LogIn', login_path %>  </a>
+          <a class="nav-link" <%= link_to 'Log In', login_path %>  </a>
         <% end %>
       </li>
       <li class="nav-item">
@@ -36,14 +39,20 @@
         <% end %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Contact us</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<% if flash[:alert] %>
+  <div class="alert"><%= simple_format(flash[:alert]) %></div>
+<% end %>
+
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <div class="container">
   <%= yield %>
 </div>
