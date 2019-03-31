@@ -12,6 +12,18 @@
         </tr>
         <tr>
           <td>
+            <%= f.label :password, "Password: ", class: 'required'  %>
+            <%= f.password_field :password, id: 'password'%>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :password_confirmation, "Confirm Password: ", class: 'required'  %>
+            <%= f.password_field :password_confirmation, id: 'password_confirmation' %>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <%= f.label :FirstName, "First Name: ", class: 'required' %>
             <%= f.text_field :FirstName, id: 'FirstName' %>
           </td>

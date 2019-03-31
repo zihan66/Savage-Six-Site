@@ -34,31 +34,26 @@ class UsersController < ApplicationController
          redirect_to current_user and return
       end
 
-   @user = User.find(params[:id])
-   #if @user.update_attributes(user_params)
-   # flash[:success] = "Profile updated"
-   # redirect_to @user
-   #else
-   #render 'edit'
-   #end
-end
-
-def update
-   @user = User.find(params[:id])
-   if @user.update_attributes(user_params)
-      flash[:success] = "Profile updated"
-      redirect_to @user
-   else
-      render 'edit'
+      @user = User.find(params[:id])
    end
-end
 
-private
+   def update
+      @user = User.find(params[:id])
+      if @user.update_attributes(user_params)
+         flash[:notice] = "Profile updated"
+         redirect_to @user
+      else
+         flash.now[:alert] = @user.errors.full_messages.join("<br/>").html_safe
+         render 'edit'
+      end
+   end
 
-def user_params
-   params.require(:user).permit(:FirstName, :lastname, :email, :password,
-                                :password_confirmation, :major, :classyear, :occupation, :phonenumber, :city,
-                                :state, :country)
-end
+   private
+
+   def user_params
+      params.require(:user).permit(:FirstName, :lastname, :email, :password,
+                                   :password_confirmation, :major, :classyear, :occupation, :phonenumber, :city,
+                                   :state, :country)
+   end
 
 end
