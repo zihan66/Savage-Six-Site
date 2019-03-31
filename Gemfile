@@ -45,9 +45,9 @@ gem 'selenium-webdriver'
 gem 'chromedriver-helper', '1.2.0'
 gem 'rspec-rails'
 gem 'sprockets-rails'
+gem 'react-rails'
 group :development, :test do
    gem 'sqlite3'
-   gem 'rails_12factor'
    gem 'heroku-deflater'
 end
 gem 'haml-rails', '>= 0.3.4'
