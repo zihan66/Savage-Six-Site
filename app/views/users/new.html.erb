@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for @user do |f| %>
-      <table cellpadding="10">
+      <table cellpadding="11">
         <tr>
           <td>
             <%= f.label :email, "Email: " , class: 'required' %>
@@ -67,6 +67,12 @@
           <td>
             <%= f.label :country, "Counrty: " %>
             <%= f.text_field :country %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= f.label :military, "Military?: " %>
+            <%= f.select(:military, options_for_select([['', 1], ['Yes', 2], ['No', 3]]))%>
           </td>
         </tr>
       </table>
