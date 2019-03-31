@@ -20,16 +20,16 @@
   </p>
   <p>
     <strong>ClassYear:</strong>
-    <%= @user.classyear %>
+    <%= @user.classyear.year %>
   </p>
   <p>
     <strong>Occupation:</strong>
     <%= @user.occupation %>
   <p>
     <strong>PhoneNumber:</strong>
-    <%= @user.phonenumber %>
+    <%= number_to_phone(@user.phonenumber) %>
   <p>
-    <strong>Living City:</strong>
+    <strong>City:</strong>
     <%= @user.city %>
   <p>
     <strong>State:</strong>
