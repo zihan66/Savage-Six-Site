@@ -12,15 +12,16 @@ class User < ApplicationRecord
   has_secure_password
 
   def self.search(search)
+    users = User.none
     if search
-      term = User.find_by(lastname: search)
-      if term
-        self.where(lastname: term)
-      else
-        User.all
+      terms = search.gsub(/\s+/m, ' ').strip.split(" ")
+      terms.each do |term|
+        users = users.or(User.where('lower(lastname) = ?', term.downcase))
+            .or(User.where('lower(FirstName) = ?', term.downcase))
       end
     else
-      User.all
+      users = User.all
     end
+    users
   end
 end

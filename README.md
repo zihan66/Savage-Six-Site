@@ -4,15 +4,15 @@ Team Int Elligence
 
 ## Members: 
 
-Akin Adegboye (Scrum Master / Front-End Developer)
+Akin Adegboye (Scrum Master / Developer)
 
-Zihan Wei - (Product Owner / Back-End Developer)
+Zihan Wei - (Product Owner / Developer)
 
-John Hamilton - (Front-End Developer)
+John Hamilton - (Developer)
 
-Robert Paraliticci - (Front-End Developer)
+Robert Paraliticci - (Developer)
 
-Vince Hamill - (Back-End Developer)
+Vince Hamill - (Developer)
 
 ## Summary
 
