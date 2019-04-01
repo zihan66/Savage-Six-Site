@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   def index
     @users = User.search(params[:search])
+
+    if @users.length == 0
+      flash.now.notice = "No users found."
+      @users = User.all
+    end
   end
 
    def show
