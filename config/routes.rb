@@ -11,6 +11,8 @@ Rails.application.routes.draw do
    get '/logout',  to: 'sessions#destroy'
    get  '/update',  to: 'users#edit'
    patch '/update',  to: 'users#update'
+   get '/search', to: 'search#index'
+   get 'search/results' => 'search#show'
 
    resources :users
 end
