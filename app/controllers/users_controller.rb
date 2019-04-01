@@ -49,6 +49,9 @@ class UsersController < ApplicationController
       end
    end
 
+  def military_boolean(boolean)
+     boolean ? 'Yes' : 'No'
+  end
 
   private
   def user_params

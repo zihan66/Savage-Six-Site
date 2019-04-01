@@ -36,3 +36,8 @@ p{
   padding-top:20px;
   font-size: 20px;
 }
+
+input[type=checkbox]
+{
+  -webkit-appearance:checkbox;
+}
