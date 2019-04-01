@@ -24,13 +24,19 @@
       <li class="navbar-nav">
         <a class="nav-link" <%= link_to "Home", root_path %> </a>
       </li>
-      <li class="nav-item">
-        <% if logged_in? %>
+      <% if logged_in? %>
+        <li class="nav-item">
+          <a class="nav-link" <%= link_to "Directory", index_path %> </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" <%= link_to "Log out", logout_path, method: :delete %> </a>
-        <% else %>
+        </li>
+      <% else %>
+        <li class="nav-item">
           <a class="nav-link" <%= link_to 'Log In', login_path %>  </a>
-        <% end %>
-      </li>
+        </li>
+      <% end %>
+
       <li class="nav-item">
         <% if logged_in? %>
           <a class="nav-link" <%= link_to "Profile", current_user %> </a>
