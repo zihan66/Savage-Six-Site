@@ -306,7 +306,7 @@
   },
   "Cucumber Features": {
     "coverage": {
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/controllers/sessions_controller.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -332,7 +332,7 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/controllers/application_controller.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -340,7 +340,7 @@
         1,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/helpers/application_helper.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -348,7 +348,7 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/helpers/sessions_helper.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/sessions_helper.rb": [
         1,
         null,
         1,
@@ -375,7 +375,7 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/helpers/users_helper.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/helpers/users_helper.rb": [
         1,
         1,
         2,
@@ -385,7 +385,7 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/models/user.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/user.rb": [
         1,
         1,
         1,
@@ -414,12 +414,12 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/models/application_record.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/controllers/users_controller.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/controllers/users_controller.rb": [
         1,
         1,
         2,
@@ -490,29 +490,29 @@
         null,
         null
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/channels/application_cable/channel.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/channels/application_cable/connection.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/jobs/application_job.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "C:/Users/Vince/Documents/CSCE431/Savage-Six-Site/app/mailers/application_mailer.rb": [
+      "C:/Users/zihan/RubymineProjects/Savage-Six-Site/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1554172444
+    "timestamp": 1554177272
   }
 }
