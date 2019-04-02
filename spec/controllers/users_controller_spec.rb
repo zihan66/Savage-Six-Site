@@ -1,4 +1,3 @@
-equire 'rails_helper'
 
 describe UsersController, type: :controller do
   describe "GET #index" do
