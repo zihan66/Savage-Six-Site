@@ -58,6 +58,10 @@ class UsersController < ApplicationController
      boolean ? 'Yes' : 'No'
   end
 
+  def contact
+
+  end
+
   private
   def user_params
      params.require(:user).permit(:FirstName, :lastname, :email, :password,
