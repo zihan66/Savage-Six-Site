@@ -96,3 +96,20 @@ strong{
   margin-right: 4px;
   margin-left: 4px;
 }
+
+.navbar-default { margin : 0 }
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: asset_url('boots_alt-1024x302.jpg');
+  /* Full height */
+  height: 120%;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
