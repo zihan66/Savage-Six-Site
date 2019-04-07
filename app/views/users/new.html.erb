@@ -71,8 +71,8 @@
         </tr>
         <tr>
           <td>
-            <%= f.label :military, "Are you in Military? " %>
-            <%= f.select :military, [['Yes', true], ['No', false]]%>
+            <%= f.label :military, "Military branch: " %>
+            <%= f.select :military, ['Not Military', 'Army', 'Marine Corps', 'Navy', 'Air Force', 'Coast Guard']%>
           </td>
         </tr>
       </table>

@@ -55,10 +55,6 @@ class UsersController < ApplicationController
       end
    end
 
-  def military_boolean(boolean)
-     boolean ? 'Yes' : 'No'
-  end
-
   def password_changed?
      !@password_digest.blank? or password.blank?
   end
