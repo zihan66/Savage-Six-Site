@@ -44,6 +44,7 @@ class UsersController < ApplicationController
    end
 
    def update
+      params[:user].delete(:password) if params[:user][:password].blank?
       @user = User.find(params[:id])
       if @user.update_attributes(user_params)
          flash[:notice] = "Profile updated"
@@ -56,6 +57,10 @@ class UsersController < ApplicationController
 
   def military_boolean(boolean)
      boolean ? 'Yes' : 'No'
+  end
+
+  def password_changed?
+     !@password_digest.blank? or password.blank?
   end
 
   private
