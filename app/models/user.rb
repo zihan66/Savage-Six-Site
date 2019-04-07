@@ -17,7 +17,21 @@ class User < ApplicationRecord
       terms = search.gsub(/\s+/m, ' ').strip.split(" ")
       terms.each do |term|
         users = users.or(User.where('lower(lastname) = ?', term.downcase))
-            .or(User.where('lower(FirstName) = ?', term.downcase))
+        users = users.or(User.where('lower(FirstName) = ?', term.downcase))
+        users = users.or(User.where('lower(state) = ?', term.downcase))
+        users = users.or(User.where('lower(city) = ?', term.downcase))
+
+        users = users.or(User.where('lower(major) Like ?', "% " + term.downcase + " %"))
+        users = users.or(User.where('lower(major) Like ?', term.downcase))
+        users = users.or(User.where('lower(major) Like ?', term.downcase + " %"))
+        users = users.or(User.where('lower(major) Like ?', "% " + term.downcase))
+
+        users = users.or(User.where('lower(occupation) Like ?', "% " + term.downcase + " %"))
+        users = users.or(User.where('lower(occupation) Like ?', term.downcase))
+        users = users.or(User.where('lower(occupation) Like ?', term.downcase + " %"))
+        users = users.or(User.where('lower(occupation) Like ?', "% " + term.downcase))
+
+
       end
     else
       users = User.all
