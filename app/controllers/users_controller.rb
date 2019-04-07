@@ -1,4 +1,3 @@
-require 'date'
 class UsersController < ApplicationController
   def index
     @users = User.search(params[:search])
@@ -54,6 +53,14 @@ class UsersController < ApplicationController
          render 'edit'
       end
    end
+
+  def military_boolean(boolean)
+     boolean ? 'Yes' : 'No'
+  end
+
+  def contact
+
+  end
 
   private
   def user_params

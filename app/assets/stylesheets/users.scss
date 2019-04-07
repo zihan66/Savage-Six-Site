@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1{
+   text-align: center;
+ }
+
+h2{
   text-align: center;
 }
 input[type], select, textarea{
@@ -35,6 +39,7 @@ label.required:after {
 p{
   padding-top:20px;
   font-size: 20px;
+  text-align: center;
 }
 
 input[type=checkbox]
