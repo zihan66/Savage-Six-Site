@@ -7,7 +7,7 @@
   <%= submit_tag ("Search") %>
 <% end %>
 
-<table style="width: 100%">
+<table style="width: 100%; table-layout: fixed">
   <% @users.each_with_index do |user, i| %>
     <% if (i % 2 == 0) %>
       <tr>
@@ -17,7 +17,7 @@
     <% end %>
           <table style="border: 1px solid black; width: 100%">
             <tr>
-              <td rowspan="3">
+              <td rowspan="3"; style="width: 85px">
                 <%= gravatar_for user, size: 80 %>
               </td>
               <th>
