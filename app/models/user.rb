@@ -65,6 +65,11 @@ class User < ApplicationRecord
         users = users.or(User.where('lower(occupation) Like ?', term.downcase + " %"))
         users = users.or(User.where('lower(occupation) Like ?', "% " + term.downcase))
 
+        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase + " %"))
+        users = users.or(User.where('lower(military) Like ?', term.downcase))
+        users = users.or(User.where('lower(military) Like ?', term.downcase + " %"))
+        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase))
+
 
       end
     else

@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_04_07_233829) do
     t.string "city"
     t.string "state"
     t.string "country"
-    t.boolean "military", default: false
+    t.string "military", default: "0"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
     t.index ["email"], name: "index_users_on_email", unique: true
