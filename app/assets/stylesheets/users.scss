@@ -31,6 +31,7 @@ input[type=submit] {
 td{
   padding: 10px;
 }
+
 label.required:after {
   content: " *";
   color: red;
@@ -39,10 +40,16 @@ label.required:after {
 p{
   padding-top:20px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
 }
 
 input[type=checkbox]
 {
   -webkit-appearance:checkbox;
+}
+
+.button{
+    text-align: center;
+    margin: 20px;
 }

@@ -8,38 +8,59 @@
     </section>
   </aside>
 </div>
+<hr>
 
- <p>
+<table cellpadding="10">
+  <tr>
+    <td>
     <strong>Email Address:</strong>
     <%= @user.email %>
-  </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>PhoneNumber:</strong>
+      <%= number_to_phone(@user.phonenumber) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Major:</strong>
+      <%= @user.major %>
+    </td>
+    <td>
+      <strong>ClassYear:</strong>
+      <%= @user.classyear.year.to_s %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Occupation:</strong>
+      <%= @user.occupation %>
+    </td>
+  </tr>
 
-  <p>
-    <strong>Major:</strong>
-    <%= @user.major %>
-  </p>
-  <p>
-    <strong>ClassYear:</strong>
-    <%= @user.classyear.year.to_s %>
-  </p>
-  <p>
-    <strong>Occupation:</strong>
-    <%= @user.occupation %>
-  <p>
-    <strong>PhoneNumber:</strong>
-    <%= number_to_phone(@user.phonenumber) %>
-  <p>
+  <tr>
+    <td>
+      <strong>Military:</strong>
+      <%= @user.military %>
+    </td>
+  </tr>
+
+  <td>
     <strong>City:</strong>
     <%= @user.city %>
-  <p>
+  </td>
+  <td>
     <strong>State:</strong>
     <%= @user.state %>
-  <p>
+  </td>
+  <td>
     <strong>Country:</strong>
     <%= @user.country %>
-  <p>
-    <strong>Military:</strong>
-    <%= @user.military %>
-  </p>
+  </td>
+</table>
 
-<%= link_to 'Edit Profile', edit_user_path%>
+<div class="button" >
+<%= button_to "Edit Profile", edit_user_path, :class => "button", :method => :get %>
+</div>
