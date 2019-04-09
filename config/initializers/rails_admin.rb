@@ -8,6 +8,22 @@ RailsAdmin.config do |config|
    # end
    # config.current_user_method(&:current_user)
 
+   "#{config.authenticate_with do
+      authenticate_or_request_with_http_basic('Login required') do |username, password|
+         user = User.where(FirstName:username).first
+         user.authenticate(password) if user
+      end
+   end}"
+
+   config.authenticate_with do
+      user = User.find_by(id: session[:user_id])
+      if user.nil?
+         redirect_to user.login_path
+      elsif !user[:admin]
+         redirect_to user.login_path
+      end
+   end
+
    ## == Cancan ==
    # config.authorize_with :cancan
 
