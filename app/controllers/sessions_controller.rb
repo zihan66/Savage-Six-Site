@@ -9,10 +9,11 @@ class SessionsController < ApplicationController
       log_in user
       flash[:notice] = "Logged in successfully"
       redirect_to user
+    elsif user
+      flash.now[:alert] = 'Incorrect password'
+      render 'new'
     else
-      # Create an error message.
-      flash.now[:alert] = 'Invalid email/password combination'
-      puts "did a thing"
+      flash.now[:alert] = 'Unrecognized email'
       render 'new'
     end
   end

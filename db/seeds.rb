@@ -7,4 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
-User.create(email: 'admin@admin.admin', password_digest: BCrypt::Password.create('admin'), admin: true)
+User.create!(email: 'admin@admin.admin',
+            password: 'admin1',
+            password_confirmation: 'admin1',
+            admin: true,
+            FirstName: "Admin",
+            lastname: "Admin",
+            major: "Admin",
+            classyear: DateTime.current,
+            military: "Admin")
