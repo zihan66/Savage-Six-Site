@@ -18,4 +18,5 @@ Rails.application.routes.draw do
    get '/contact', to: 'users#contact'
 
    resources :users
+   resources :password_resets,     only: [:new, :create, :edit, :update]
 end
