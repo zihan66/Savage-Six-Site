@@ -13,31 +13,35 @@
       <tr>
         <td>
     <% else %>
-        <td>
+      <td>
     <% end %>
-          <table style="border: 1px solid black; width: 100%">
-            <tr>
-              <td rowspan="3"; style="width: 85px">
-                <%= gravatar_for user, size: 80 %>
-              </td>
-              <th>
-                <%= link_to user.FirstName + " " + user.lastname + " '" +
-                                user.classyear.year.to_s.split(//).last(2).join, user %>
-              </th>
-            </tr>
-            <tr>
-              <td>
-                <%= "Major: " + user.major +
-                    " | Occupation: " + user.occupation %>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <%= "Location: " + user.city + ", " + user.state %>
-              </td>
-            </tr>
-          </table>
+    <table style="border: 1px solid black; width: 100%">
+      <tr>
+        <td rowspan="3" ; style="width: 85px">
+          <%= gravatar_for user, size: 80 %>
         </td>
+        <th>
+          <%= link_to user.FirstName + " " + user.lastname + " '" +
+                          user.classyear.year.to_s.split(//).last(2).join, user %>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <%= "Major: " + user.major +
+                  " | Occupation: " %>
+          <%= user.occupation %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= "Location: " %>
+          <%= user.city %>
+          <%= ", " %>
+          <%= user.state %>
+        </td>
+      </tr>
+    </table>
+    </td>
     <% if i % 2 == 1 %>
       </tr>
     <% end %>
