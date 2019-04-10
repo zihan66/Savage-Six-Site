@@ -24,8 +24,8 @@
         </li>
         <% if logged_in? %>
           <li class="nav-item">
-            <a class="nav-link" <%= link_to "Directory", index_path %> </a>
-            <a class="nav-link" <%= link_to "Sign out", logout_path, method: :delete %> </a>
+            <a class="nav-link" <%= link_to "Search a cadet", index_path %> </a>
+            <button type="button" class="btn btn-md"> <%= link_to "Sign out", logout_path, method: :delete %> </button>
           </li>
         <% else %>
           <li class="nav-item">

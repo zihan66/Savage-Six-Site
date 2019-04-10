@@ -5,4 +5,8 @@ module UsersHelper
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag(gravatar_url, alt: user.lastname, class: "gravatar")
   end
+
+  def is_admin?
+    @user[:admin]
+  end
 end
