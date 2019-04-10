@@ -15,6 +15,8 @@ Rails.application.routes.draw do
    get '/search', to: 'search#index'
    get 'search/results' => 'search#show'
    get '/index', to: 'users#index'
+   get '/contact', to: 'users#contact'
 
    resources :users
+   resources :password_resets,     only: [:new, :create, :edit, :update]
 end
