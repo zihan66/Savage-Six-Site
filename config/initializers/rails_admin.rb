@@ -8,6 +8,15 @@ RailsAdmin.config do |config|
    # end
    # config.current_user_method(&:current_user)
 
+   config.authenticate_with do
+      user = User.find_by(id: session[:user_id])
+      if user.nil?
+         redirect_to main_app.root_path
+      elsif !user[:admin]
+         redirect_to main_app.root_path
+      end
+   end
+
    ## == Cancan ==
    # config.authorize_with :cancan
 
