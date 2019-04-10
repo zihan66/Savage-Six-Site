@@ -28,12 +28,16 @@
             <tr>
               <td>
                 <%= "Major: " + user.major +
-                    " | Occupation: " + user.occupation %>
+                    " | Occupation: " %>
+                <%= user.occupation %>
               </td>
             </tr>
             <tr>
               <td>
-                <%= "Location: " + user.city + ", " + user.state %>
+                <%= "Location: " %>
+                <%= user.city %>
+                <%= ", " %>
+                <%= user.state %>
               </td>
             </tr>
           </table>
