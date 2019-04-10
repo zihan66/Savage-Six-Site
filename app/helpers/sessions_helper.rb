@@ -18,6 +18,10 @@ module SessionsHelper
       return @current_user.id.to_s == id.to_s
    end
 
+   def is_admin?
+      current_user && current_user[:admin]
+   end
+
    def log_out
       session.delete(:user_id)
       @current_user = nil
