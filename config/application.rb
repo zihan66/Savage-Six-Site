@@ -1,3 +1,4 @@
+config.assets.initialize_on_precompile = false
 require_relative 'boot'
 
 require 'rails/all'
@@ -7,7 +8,6 @@ require File.expand_path('../boot', __FILE__)
 Bundler.require(*Rails.groups)
 module SavageSixSite
   class Application < Rails::Application
-    config.assets.initialize_on_precompile = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     # Settings in config/environments/* take precedence over those specified here.
