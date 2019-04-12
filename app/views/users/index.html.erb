@@ -4,6 +4,8 @@
 <h4>Search Users:</h4>
 <%= form_tag(users_path, method: :get) do %>
   <%= text_field_tag(:search, params[:search]) %>
+  <%= select_tag(:filter, options_for_select(["All", "Not Military", "Army", "Marine Corps", "Navy",
+                                                      "Air Force", "Coast Guard"], :selected => params[:filter])) %>
   <%= submit_tag ("Search") %>
 <% end %>
 
