@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_07_233909) do
+ActiveRecord::Schema.define(version: 2019_04_11_202633) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2019_04_07_233909) do
     t.string "FirstName"
     t.string "lastname"
     t.string "major"
-    t.datetime "classyear"
     t.string "occupation"
     t.string "phonenumber"
     t.string "city"
@@ -30,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_04_07_233909) do
     t.string "reset_digest"
     t.datetime "reset_sent_at"
     t.boolean "admin", default: false
+    t.datetime "classyear"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
