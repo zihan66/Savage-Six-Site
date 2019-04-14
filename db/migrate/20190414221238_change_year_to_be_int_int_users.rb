@@ -1,5 +1,5 @@
 class ChangeYearToBeIntIntUsers < ActiveRecord::Migration[5.2]
   def change
-    change_column :users, :classyear, :integer
+    change_column :users, :classyear, :integer, using: 'classyear::integer'
   end
 end
