@@ -39,7 +39,7 @@
           </td>
           <td>
             <%= f.label :classyear, "Class Year: " , class: 'required' %>
-            <%= f.select :classyear, (1876..(Date.today.year+5)).reverse_each, id: 'myclassyear' %>
+            <%= f.select :classyear, (1876..2023), id: 'myclassyear' %>
           </td>
         </tr>
         <tr>
