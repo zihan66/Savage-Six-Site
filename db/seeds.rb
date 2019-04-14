@@ -13,7 +13,7 @@ User.create!(email: 'admin@admin.admin',
             FirstName: "Admin",
             lastname: "Admin",
             major: "Admin",
-            classyear: DateTime.current,
+            classyear: 2020,
             military: "Admin",
             activated: true,
             activated_at: Time.zone.now)
