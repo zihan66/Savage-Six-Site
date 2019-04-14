@@ -15,4 +15,6 @@ User.create!(email: 'admin@admin.admin',
             lastname: "Admin",
             major: "Admin",
             classyear: DateTime.current,
-            military: "Admin")
+            military: "Admin",
+            activated: true,
+            activated_at: Time.zone.now)
