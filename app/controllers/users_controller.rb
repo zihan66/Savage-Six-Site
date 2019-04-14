@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   def index
-    @users = User.search(params[:search], params[:filter])
+    @users = User.search(params[:search])
 
     if @users.length == 0
       flash.now.notice = "No users found."
-      @users = User.where("admin = 0")
+      @users = User.all
     end
   end
 
@@ -24,9 +24,9 @@ class UsersController < ApplicationController
    def create
       @user = User.new(user_params)
       if @user.save
-         log_in @user
-         flash[:notice] = "Welcome to Savage Six Site!"
-         redirect_to @user
+        @user.send_activation_email
+        flash[:notice] = "Please check your email to activate your account."
+        redirect_to root_url
       else
          flash.now[:alert] = @user.errors.full_messages.join("<br/>").html_safe
          render 'new'
@@ -68,4 +68,3 @@ class UsersController < ApplicationController
   end
 
 end
-

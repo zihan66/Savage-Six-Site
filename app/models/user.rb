@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  attr_accessor :reset_token
+  attr_accessor :reset_token, :activation_token
   before_save {self.email = email.downcase}
+  before_create :create_activation_digest
   validates :FirstName, presence: true, length: { maximum: 50 }
   validates :lastname, presence: true, length: { maximum: 50 }
   validates :classyear, presence: true
@@ -21,6 +22,30 @@ class User < ApplicationRecord
     SecureRandom.urlsafe_base64
   end
 
+  # Activates an account.
+  def activate
+    update_attribute(:activated,    true)
+    update_attribute(:activated_at, Time.zone.now)
+  end
+
+  # Sends activation email.
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  # Creates and assigns the activation token and digest.
+  def create_activation_digest
+    self.activation_token  = User.new_token
+    self.activation_digest = User.digest(activation_token)
+  end
+
+  # Returns true if the given token matches the digest.
+  def authenticated?(attribute, token)
+    digest = send("#{attribute}_digest")
+    return false if digest.nil?
+    BCrypt::Password.new(digest).is_password?(token)
+  end
+
   # Sets the password reset attributes.
   def create_reset_digest
     self.reset_token = User.new_token
@@ -38,9 +63,9 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
-  def self.search(search, filter)
+  def self.search(search)
     users = User.none
-    if search && search != ""
+    if search
       terms = search.gsub(/\s+/m, ' ').strip.split(" ")
       terms.each do |term|
         users = users.or(User.where('lower(lastname) = ?', term.downcase))
@@ -65,20 +90,16 @@ class User < ApplicationRecord
         users = users.or(User.where('lower(occupation) Like ?', term.downcase))
         users = users.or(User.where('lower(occupation) Like ?', term.downcase + " %"))
         users = users.or(User.where('lower(occupation) Like ?', "% " + term.downcase))
-      end
 
-      if !filter || filter == "All"
-        users = users.where("admin = 0")
-      else
-        users = users.where("military = ?", filter)
-      end
+        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase + " %"))
+        users = users.or(User.where('lower(military) Like ?', term.downcase))
+        users = users.or(User.where('lower(military) Like ?', term.downcase + " %"))
+        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase))
 
+
+      end
     else
-      if !filter || filter == "All"
-        users = User.where("admin = 0")
-      else
-        users = User.where("military = ?", filter)
-      end
+      users = User.all
     end
     users
   end
