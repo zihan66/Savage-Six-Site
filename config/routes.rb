@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'contact_info/show'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
    get 'sessions/new'
    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -15,7 +16,7 @@ Rails.application.routes.draw do
    get '/search', to: 'search#index'
    get 'search/results' => 'search#show'
    get '/index', to: 'users#index'
-   get '/contact', to: 'users#contact'
+   get '/contact', to: 'contact_info#show'
 
    resources :users
    resources :password_resets,     only: [:new, :create, :edit, :update]

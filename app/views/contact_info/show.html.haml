@@ -1,0 +1,40 @@
+- provide(:title, 'Contact Info')
+%h1 Contact Info
+
+%table{style: "width: 100%; table-layout: fixed; border:none;"}
+  - @infos.each do |info|
+    %tr
+      %td{style: "float: right;"}
+        = info.title
+      %td{style: "border-left:2px"}
+        =info.info
+
+%br
+%br
+%br
+
+%h2 Site Design
+%div{style: "text-align:center"}
+  Akin Adegboye:
+  %br
+  Email: someone2@gmail.com
+  %br
+  %br
+  Vince Hamill:
+  %br
+  Email: someone5@gmail.com
+  %br
+  %br
+  John Hamilton:
+  %br
+  Email: someone4@gmail.com
+  %br
+  %br
+  Robert Paraliticci:
+  %br
+  Email: someone6@gmail.com
+  %br
+  %br
+  Zihan Wei:
+  %br
+  Email: someone3@gmail.com
