@@ -39,7 +39,7 @@
           </td>
           <td>
             <%= f.label :classyear, "Class Year: " , class: 'required' %>
-            <%= f.select :classyear, (1876..2023), id: 'myclassyear' %>
+            <%= f.select :classyear, options_for_select(1876..2023), :prompt => 'Select One' , :class => "classyear" %>
           </td>
         </tr>
         <tr>

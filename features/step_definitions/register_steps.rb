@@ -9,7 +9,7 @@ When("I fill out the form") do
   fill_in "FirstName", :with => "Zihan"
   fill_in "lastname", :with => "Wei"
   fill_in "major", :with => "Computer Sucks"
-  page.select "1989", from: 'myclassyear'
+  select '1989',:from => 'classyear'
   click_button "Create my account"
 end
 
