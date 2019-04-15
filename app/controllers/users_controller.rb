@@ -3,8 +3,6 @@ class UsersController < ApplicationController
       if !logged_in?
          redirect_to login_path
          flash[:alert] = "You must be logged in to view profiles.  "
-      else
-         @user = User.find(params[:id])
       end
       @users = User.search(params[:search])
 
