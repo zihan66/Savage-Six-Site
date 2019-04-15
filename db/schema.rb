@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_230334) do
     t.string "city"
     t.string "state"
     t.string "country"
-    t.string "military", default: "0"
+    t.string "military"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
     t.boolean "admin", default: false
