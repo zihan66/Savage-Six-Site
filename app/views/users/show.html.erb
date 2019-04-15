@@ -61,6 +61,10 @@
   </td>
 </table>
 
-<div class="button" >
-<%= button_to "Edit Profile", edit_user_path, :class => "button", :method => :get %>
-</div>
+<%if current_user %>
+  <div class="button" >
+    <%= button_to "Edit Profile", edit_user_path, :class => "button", :method => :get if current_user == @user%>
+  </div>
+<%end %>
+
+
