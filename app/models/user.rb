@@ -63,9 +63,9 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
-  def self.search(search)
+  def self.search(search, filter)
     users = User.none
-    if search
+    if search && search != ""
       terms = search.gsub(/\s+/m, ' ').strip.split(" ")
       terms.each do |term|
         users = users.or(User.where('lower(lastname) = ?', term.downcase))
@@ -90,16 +90,20 @@ class User < ApplicationRecord
         users = users.or(User.where('lower(occupation) Like ?', term.downcase))
         users = users.or(User.where('lower(occupation) Like ?', term.downcase + " %"))
         users = users.or(User.where('lower(occupation) Like ?', "% " + term.downcase))
-
-        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase + " %"))
-        users = users.or(User.where('lower(military) Like ?', term.downcase))
-        users = users.or(User.where('lower(military) Like ?', term.downcase + " %"))
-        users = users.or(User.where('lower(military) Like ?', "% " + term.downcase))
-
-
       end
+
+      if !filter || filter == "All"
+        users = users.where("admin = 0")
+      else
+        users = users.where("military = ?", filter)
+      end
+
     else
-      users = User.all
+      if !filter || filter == "All"
+        users = User.where("admin = 0")
+      else
+        users = User.where("military = ?", filter)
+      end
     end
     users
   end
