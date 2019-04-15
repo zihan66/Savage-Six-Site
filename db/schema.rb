@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 2019_04_14_230334) do
     t.string "military"
     t.boolean "admin", default: false
     t.integer "classyear"
+    t.string "activation_digest"
+    t.boolean "activated", default: false
+    t.datetime "activated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
