@@ -14,5 +14,10 @@ module SavageSixSite
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    # from stack overflow for heroku push error:
+    # https://stackoverflow.com/questions/19650621/heroku-upload-precompiling-assets-failed
+    config.assets.initialize_on_precompile = false
+
   end
 end
