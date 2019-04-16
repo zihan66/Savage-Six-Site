@@ -32,14 +32,14 @@ ActiveRecord::Schema.define(version: 2019_04_14_230931) do
     t.string "city"
     t.string "state"
     t.string "country"
-    t.string "military", default: "0"
+    t.string "military"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
     t.boolean "admin", default: false
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
-    t.integer "classyear"
+    t.integer "classyear", default: 0, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
