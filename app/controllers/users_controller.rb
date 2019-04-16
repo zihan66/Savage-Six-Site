@@ -7,7 +7,7 @@ class UsersController < ApplicationController
       @users = User.search(params[:search], params[:filter])
 
       if @users.length == 0
-         flash.now.notice = "No users found."
+         flash.now.alert = "No users found."
          @users = User.where("admin = 0")
       end
    end

@@ -9,10 +9,10 @@ When("I fill out the form") do
   fill_in "FirstName", :with => "Zihan"
   fill_in "lastname", :with => "Wei"
   fill_in "major", :with => "Computer Sucks"
-  select '1989',:from => 'classyear'
+  select("1989", from: 'user_classyear')
   click_button "Create my account"
 end
 
 Then("a new account should be created") do
-  expect(page).to have_content("Welcome to Savage Six Site!")
+
 end
