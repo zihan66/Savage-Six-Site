@@ -68,8 +68,8 @@ class User < ApplicationRecord
     if search && search != ""
       terms = search.gsub(/\s+/m, ' ').strip.split(" ")
       terms.each do |term|
-        users = users.or(User.where('lower(lastname) = ?', term.downcase))
-        users = users.or(User.where('lower(FirstName) = ?', term.downcase))
+        users = users.or(User.where('lower(users.lastname) = ?', term.downcase))
+        users = users.or(User.where('lower(users.FirstName) = ?', term.downcase))
 
         users = users.or(User.where('lower(city) Like ?', "% " + term.downcase + " %"))
         users = users.or(User.where('lower(city) Like ?', term.downcase))
