@@ -12,7 +12,7 @@
         </tr>
         <tr>
           <td>
-            <%= f.label :password, "Password: ", class: 'required'  %>
+            <%= f.label :password, "Password: (minimum is 6 digits)", class: 'required'  %>
             <%= f.password_field :password, id: 'password'%>
           </td>
         </tr>
@@ -39,7 +39,7 @@
           </td>
           <td>
             <%= f.label :classyear, "Class Year: " , class: 'required' %>
-            <%= f.select :classyear, options_for_select(1876..2023), :prompt => 'Select One' , :id => "myclassyear" %>
+            <%= f.select :classyear, (1876..(Date.today.year+5)).reverse_each, :prompt => 'Select One' , :id => "myclassyear" %>
           </td>
         </tr>
         <tr>
