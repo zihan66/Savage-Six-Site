@@ -13,6 +13,12 @@ When("I fill out the form") do
   click_button "Create my account"
 end
 
+And("I activate my account from email") do
+  email = ActionMailer::Base.deliveries.first
+  email.to.should == @user.email
+  #TODO
+end
+
 Then("a new account should be created") do
   expect(page).to have_content("Welcome to Savage Six Site!")
 end
