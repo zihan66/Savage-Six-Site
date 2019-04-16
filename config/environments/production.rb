@@ -76,6 +76,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
+      :from           => 'no_reply@stormy-sea-86601.herokuapp.com',
       :address        => 'smtp.sendgrid.net',
       :port           => 587,
       :authentication => :plain,
