@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
       if @users.length == 0
          flash.now.alert = "No users found."
-         @users = User.where("admin = false")
+         @users = User.where("admin == false")
       end
    end
 
