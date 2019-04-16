@@ -93,14 +93,14 @@ class User < ApplicationRecord
       end
 
       if !filter || filter == "All"
-        users = users.where("admin = 0")
+        users = users.where(admin: false)
       else
         users = users.where("military = ?", filter)
       end
 
     else
       if !filter || filter == "All"
-        users = User.where("admin = 0")
+        users = User.where(admin: false)
       else
         users = User.where("military = ?", filter)
       end

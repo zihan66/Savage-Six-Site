@@ -6,9 +6,11 @@ class UsersController < ApplicationController
       end
       @users = User.search(params[:search], params[:filter])
 
+      byebug
+
       if @users.length == 0
          flash.now.alert = "No users found."
-         @users = User.where("admin = 0")
+         @users = User.where(admin: false)
       end
    end
 
