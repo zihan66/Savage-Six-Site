@@ -66,7 +66,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
 
   config.action_mailer.perform_caching = false
-  host = 'stormy-sea-86601.herokuapp.com'
+  host = 'savage-six-site.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -76,13 +76,13 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-      :from           => 'no_reply@stormy-sea-86601.herokuapp.com',
+      :from           => 'no_reply@savage-six-site.herokuapp.com',
       :address        => 'smtp.sendgrid.net',
       :port           => 587,
       :authentication => :plain,
       :user_name      => ENV['SENDGRID_USERNAME'],
       :password       => ENV['SENDGRID_PASSWORD'],
-      :domain         => 'stormy-sea-86601.herokuapp.com',
+      :domain         => 'savage-six-site.herokuapp.com',
       :enable_starttls_auto => true
   }
 
