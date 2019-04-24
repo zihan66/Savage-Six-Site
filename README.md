@@ -35,3 +35,6 @@ Should store:
 Ruby Version - 2.4.5p335
 Rails Version - 5.2.2
 
+## Heroku link
+https://savage-six-site.herokuapp.com
+
