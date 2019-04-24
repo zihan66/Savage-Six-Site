@@ -4,7 +4,7 @@ class UsersController < ApplicationController
          redirect_to login_path
          flash[:alert] = "You must be logged in to view profiles.  "
       end
-      @users = User.search(params[:search], params[:filter])
+      @users = User.where(activated:true).search(params[:search], params[:filter])
 
       if @users.length == 0
          flash.now.alert = "No users found."
