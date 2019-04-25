@@ -8,17 +8,7 @@
 
 user = User.where(email: 'admin@admin.admin')
 if user
-  user.update_all(email: 'admin@admin.admin',
-                  admin: true,
-                  password_digest: BCrypt::Password.create("admin1"),
-                  FirstName: "Admin",
-                  lastname: "Admin",
-                  major: "Admin",
-                  classyear: DateTime.current,
-                  military: "Admin",
-                  activated: true,
-                  activated_at: Time.zone.now)
-else
+  User.delete(user)
   User.create!(email: 'admin@admin.admin',
                password: 'admin1',
                password_confirmation: 'admin1',
