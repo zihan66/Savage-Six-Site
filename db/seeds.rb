@@ -8,25 +8,27 @@
 
 user = User.where(email: 'admin@admin.admin')
 if user
-   user.update_all(email: 'admin@admin.admin',
-                admin: true,
-                FirstName: "Admin",
-                lastname: "Admin",
-                major: "Admin",
-                classyear: DateTime.current,
-                military: "Admin",
-                activated: true,
-                activated_at: Time.zone.now)
+  user.update_all(email: 'admin@admin.admin',
+                  admin: true,
+                  password: 'admin1',
+                  password_confirmation: 'admin1',
+                  FirstName: "Admin",
+                  lastname: "Admin",
+                  major: "Admin",
+                  classyear: DateTime.current,
+                  military: "Admin",
+                  activated: true,
+                  activated_at: Time.zone.now)
 else
-   User.create!(email: 'admin@admin.admin',
-                password: 'admin1',
-                password_confirmation: 'admin1',
-                admin: true,
-                FirstName: "Admin",
-                lastname: "Admin",
-                major: "Admin",
-                classyear: DateTime.current,
-                military: "Admin",
-                activated: true,
-                activated_at: Time.zone.now)
+  User.create!(email: 'admin@admin.admin',
+               password: 'admin1',
+               password_confirmation: 'admin1',
+               admin: true,
+               FirstName: "Admin",
+               lastname: "Admin",
+               major: "Admin",
+               classyear: DateTime.current,
+               military: "Admin",
+               activated: true,
+               activated_at: Time.zone.now)
 end
