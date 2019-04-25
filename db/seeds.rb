@@ -10,8 +10,7 @@ user = User.where(email: 'admin@admin.admin')
 if user
   user.update_all(email: 'admin@admin.admin',
                   admin: true,
-                  password: 'admin1',
-                  password_confirmation: 'admin1',
+                  password_digest: BCrypt::Password.create("admin1"),
                   FirstName: "Admin",
                   lastname: "Admin",
                   major: "Admin",
